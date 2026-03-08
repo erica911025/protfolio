@@ -28,7 +28,7 @@
           <div class="intro-text">
             <h1 class="name">張芳瑜 <span class="en-name">Fang-Yu Zhang</span></h1>
             <p class="current-status">
-              國立台灣科技大學 資訊管理系研究所 碩士班一年級
+              ♦ 國立台灣科技大學 資訊管理系研究所 碩士班一年級
             </p>
             <h2 class="tagline">
               結合<span class="highlight">理性邏輯</span> 與 <span class="highlight2">感性設計</span> 的專案管理者
@@ -58,7 +58,7 @@
 
     <section class="section-container education-section slide-up">
       <div class="section-header">
-        <h3 class="section-title">Education</h3>
+        <h3 class="section-title">⚝ Education</h3>
         <span class="section-subtitle">學歷背景</span>
       </div>
       <div class="timeline">
@@ -69,7 +69,7 @@
             <h4 style="color: #7c4c4c;">國立台灣科技大學 資訊管理研究所</h4>
             <p class="degree">碩士班 就學中</p>
             <p class="extra">❁ 
-                  <router-link class="extra-link" :to="{ path: '/portfolio', hash: '#1'}">
+                  <router-link class="extra-link" :to="{ path: '/portfolio', query: { tab: 'academic' }, hash: '#moe-project' }">
                      教育部教學實踐研究計畫投稿
                   </router-link> 
                   <span class="tooltip">🔍
@@ -87,7 +87,7 @@
             <p class="achievement">🌟 平均系排第 4 名 ｜ 榮獲 3 次書卷獎</p>
             <div class="extra-container">
                 <p class="extra tooltip-parent">❁
-                  <router-link class="extra-link" :to="{ path: '/portfolio'}">
+                  <router-link class="extra-link" :to="{ path: '/portfolio', query: { tab: 'competition' }, hash: '#competition-project' }">
                     全國資訊應用服務創新競賽
                   </router-link>
                   <span class="tooltip">🔍
@@ -95,18 +95,26 @@
                   </span>
                 </p>
                 <p class="extra tooltip-parent">❁ 
-                   <router-link class="extra-link" :to="{ path: '/portfolio', hash: '#1'}">
+                   <router-link class="extra-link" :to="{ path: '/portfolio', query: { tab: 'academic' }, hash: '#nstc-project' }">
                      國科會 大專學生研究計畫
                   </router-link> 
                   <span class="tooltip">🔍
                     <span class="tooltip-text">▸ 運用氣體辨識於獨居老人居家消防安全輔助之研究</span>
                   </span>
                 </p>
-                <p class="extra tooltip-parent">❁ 專管領域實習 <span class="tooltip">🔍
+                <p class="extra tooltip-parent">❁ 
+                  <router-link class="extra-link" :to="{ path: '/experience', hash: '#tab-panel-work' }">
+                    專管領域實習
+                  </router-link>
+                  <span class="tooltip">🔍
                     <span class="tooltip-text">▸ 巨鷗科技股份有限公司 - SMART-IM 專案助理</span>
                   </span>
                 </p>
-                <p class="extra tooltip-parent">❁ 社團參與經驗 <span class="tooltip">🔍
+                <p class="extra tooltip-parent">❁ 
+                  <router-link class="extra-link" :to="{ path: '/portfolio', query: { tab: 'club' }, hash: '#tab-panel-club' }">
+                    社團參與經驗
+                  </router-link>
+                  <span class="tooltip">🔍
                     <span class="tooltip-text">▸ 學生會秘書部/選務部<br>▸ 系學會美宣組<br>▸ 科技志工服務社</span>
                   </span>
                 </p>
@@ -127,7 +135,7 @@
 
     <section class="section-container skills-section slide-up">
       <div class="section-header">
-        <h3 class="section-title">Core Skills</h3>
+        <h3 class="section-title">⚝ Core Skills</h3>
         <span class="section-subtitle">專業技能與工具</span>
       </div>
       <div class="skills-grid">
@@ -135,44 +143,44 @@
           <h4>▸  專案管理</h4>
           <p class="skill-desc">具備專案管理知識與實務經驗，能有效規劃、執行與監控專案進度，確保專案目標達成。</p>
           <div class="tags">
-            <span class="tag"># 系統架構規劃</span>
-            <span class="tag"># 專案時程 / 進度控管</span>
-            <span class="tag"># 專案規劃執行</span>
-            <span class="tag"># 專案溝通管理</span>
-            <span class="tag"># 系統流程圖製作</span>
-            <span class="tag"># KanBan - Trello、Jira</span>
+            <span class="tag">✿ 系統架構規劃</span>
+            <span class="tag">✿ 專案時程 / 進度控管</span>
+            <span class="tag">✿ 專案規劃執行</span>
+            <span class="tag">✿ 專案溝通管理</span>
+            <span class="tag">✿ 系統流程圖製作</span>
+            <span class="tag">✿ KanBan - Trello、Jira</span>
           </div>
         </div>
         <div class="skill-card skill-card--design">
           <h4>▸  網頁介面設計</h4>
           <p class="skill-desc">熟悉 Figma、Axure 等設計工具以及HTML5/CSS3語法，能夠創建直觀且美觀的使用者介面，提升使用者體驗。</p>
           <div class="tags">
-            <span class="tag">#使用者體驗設計</span>
-            <span class="tag"># 介面設計 - Figma、Axure</span>
-            <span class="tag"># HTML、CSS</span>
-            <span class="tag"># Vue.js</span>
-            <span class="tag"># Git 版本控制</span>
+            <span class="tag">✿ 使用者體驗設計</span>
+            <span class="tag">✿ 介面設計 - Figma、Axure</span>
+            <span class="tag">✿ HTML、CSS</span>
+            <span class="tag">✿ Vue.js</span>
+            <span class="tag">✿ Git 版本控制</span>
           </div>
         </div>
         <div class="skill-card skill-card--admin">
           <h4>▸  文書處理</h4>
           <p class="skill-desc">精通 Microsoft Office 套件，能高效處理各類文書工作，協助專案文件撰寫與會議紀錄。</p>
           <div class="tags">
-            <span class="tag"># PowerPoint</span>
-            <span class="tag"># Word</span>
-            <span class="tag"># Excel</span>
-            <span class="tag"># 行政事務處理</span>
-            <span class="tag"># 會議紀錄、文件撰寫</span>
+            <span class="tag">✿ PowerPoint</span>
+            <span class="tag">✿ Word</span>
+            <span class="tag">✿ Excel</span>
+            <span class="tag">✿ 行政事務處理</span>
+            <span class="tag">✿ 會議紀錄、文件撰寫</span>
           </div>
         </div>
         <div class="skill-card skill-card--ai">
           <h4>▸  AI應用趨勢</h4>
           <p class="skill-desc">持續關注生成式AI的最新發展，了解其在宣傳文案、圖片生成以及程式撰寫等領域的應用，並探索人機協作的新可能性。</p>
           <div class="tags">
-            <span class="tag"># Generative AI</span>
-            <span class="tag"># 人機協作</span>
-            <span class="tag"># 宣傳文案、圖片生成</span>
-            <span class="tag"># Vibe coding</span>
+            <span class="tag">✿ Generative AI</span>
+            <span class="tag">✿ 人機協作</span>
+            <span class="tag">✿ 宣傳文案、圖片生成</span>
+            <span class="tag">✿ Vibe coding</span>
           </div>
         </div>
       </div>
@@ -180,7 +188,7 @@
 
 
 
-    <section class="section-container shortcuts-section slide-up">
+    <!-- <section class="section-container shortcuts-section slide-up">
       <div class="section-header">
         <h3 class="section-title">Explore More</h3>
         <span class="section-subtitle">深入了解我的經歷</span>
@@ -210,7 +218,7 @@
           </div>
         </router-link>
       </div>
-    </section>
+    </section> -->
   </div>
 </template>
 

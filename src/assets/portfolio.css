@@ -285,6 +285,7 @@
   margin: 5px;
   font-size: 16px; 
   line-height: 1.6;
+  font-weight: 500;
 }
 
 .role-card-blue {
@@ -827,8 +828,9 @@
 }
 
 .club-header {
-  background-color: #1e293b;
+  background-color: #677b9c;
   padding: 16px 20px;
+  text-align: center;
 }
 
 .club-header h4 {
@@ -876,13 +878,13 @@
 
 .takeaway-box p {
   margin: 0;
-  color: #0f172a;
+  color: #654537;
   font-size: 0.95rem;
   line-height: 1.5;
   font-weight: 500;
   position: relative;
-  padding-left: 12px;
-  border-left: 3px solid #3b82f6;
+  padding-left: 8px;
+  border-left: 4px solid #ddcbb8;
 }
 
 @keyframes panel-fade {

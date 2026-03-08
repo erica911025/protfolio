@@ -48,9 +48,9 @@
       role="tabpanel"
       aria-labelledby="competition-tab"
     >
-      <h3 class="section-title">❁ 競賽專題 Competition Projects</h3>
+      <h3 class="section-title">⚝ 競賽專題 Competition Projects</h3>
 
-      <div class="featured-project">
+      <div id="competition-project" class="featured-project">
         <div class="awards-header award-gradient">
           <div class="awards-main">
             <Award class="icon icon-award" />
@@ -67,7 +67,7 @@
           <div class="project-content">
             <div class="content-block">
               <h5 class="content-title0">
-                專案背景
+                ✤ 專案背景
               </h5>
               <p class="content-text0">
                 旨在解決日益嚴重的網路霸凌問題。我們結合科技與教育，不僅透過系統偵測，更提供後續的教育資源，針對教育現場痛點提供具備前瞻性的解決方案。
@@ -96,7 +96,7 @@
 
             <div class="content-block">
               <h5 class="content-title0">
-                My Key Contributions
+                ✤ My Key Contributions
               </h5>
             <div class="role-grid">
 
@@ -123,7 +123,7 @@
             <div class="content-block">
 
              <h5 class="content-title0">
-                 頒獎快照 
+                 ✤ 頒獎快照 
             </h5>
 
              <div class="project-gallery">
@@ -196,17 +196,17 @@
       role="tabpanel"
       aria-labelledby="academic-tab"
     >
-      <h3 class="section-title">❁ 學術投稿 Academic Submissions</h3>
+      <h3 class="section-title">⚝ 學術投稿 Academic Submissions</h3>
 
       <div class="research-capabilities">
-        <p class="capabilities-title">核心研究能力展現：</p>
+        <p class="capabilities-title">✤ 核心研究能力展現：</p>
         <div class="tags-cloud">
-          <span class="skill-tag"># 系統性問題解決</span>
-          <span class="skill-tag"># AI 協作與流程賦能</span>
-          <span class="skill-tag"># 概念驗證與實作</span>
-          <span class="skill-tag"># 專業企劃與提案撰寫</span>
-          <span class="skill-tag"># 複雜資訊視覺化</span>
-          <span class="skill-tag"># 長篇邏輯架構化</span>
+          <span class="skill-tag">✿ 系統性問題解決</span>
+          <span class="skill-tag">✿ AI 協作與流程賦能</span>
+          <span class="skill-tag">✿ 概念驗證與實作</span>
+          <span class="skill-tag">✿ 專業企劃與提案撰寫</span>
+          <span class="skill-tag">✿ 複雜資訊視覺化</span>
+          <span class="skill-tag">✿ 長篇邏輯架構化</span>
         </div>
       </div>
 
@@ -215,7 +215,7 @@
         <div class="status-badge">
 
           <div class="academic-grid">
-          <div class="academic-card">
+          <div id="nstc-project" class="academic-card">
             <div class="pending">
               <span class=" passed">▸ 113年 國科會大專學生研究計畫</span>
               <p class="status-text">通過</p>
@@ -239,7 +239,7 @@
 
           <div class="status-badge2">
 
-            <div class="academic-card">
+            <div id="moe-project" class="academic-card">
              <div class="pending">
               <span class="passed">▸ 115年 教育部教學實踐研究計畫</span>
               <p class="status-textn">審查中</p>
@@ -261,9 +261,6 @@
           </div>
       </div>
 
-        
-      
-
     </section>
 
             <section
@@ -273,53 +270,54 @@
               role="tabpanel"
               aria-labelledby="club-tab"
             >
-              <h3 class="section-title">❁ 社團經驗 Club Experience</h3>
+              <h3 class="section-title">⚝ 社團經驗 Club Experience</h3>
 
               <div class="clubs-grid">
                 <div class="club-card">
                   <div class="club-header">
-                    <h4>學生會副會長</h4>
+                    <h4>✤ 學生會副會長 ✤</h4>
                   </div>
                   <div class="club-body">
                     <h5 class="sub-title">執行內容 Key Executions</h5>
                     <ul class="task-list">
-                      <li>參與籌備四校聯歡晚會、共振月台音樂祭、吾夜校園演唱會。</li>
-                      <li>協助辦理校內學生會長選拔。</li>
+                      <li>擔任校園特約商店總召，成功簽約30+合作店家，實質提升學生福利並擴大組織影響力。</li>
+                      <li>協助舉辦高中職飢餓十二活動，協助跨校資源整合與現場執行。</li>
+                      <li>參與籌備四校聯歡晚會，負責跨部門資源調度與進度控管，確保活動流程順暢達標。</li>
                     </ul>
                   </div>
                   <div class="club-footer takeaway-box">
                     <h5 class="sub-title">核心收穫 Key Takeaways</h5>
-                    <p>在多方協調中精煉跨部門溝通能力。</p>
+                    <p>擔任各部門間的溝通橋樑，在多方協調中精煉跨部門溝通能力。</p>
                   </div>
                 </div>
 
                 <div class="club-card">
                   <div class="club-header">
-                    <h4>學生會秘書部 / 選務部</h4>
+                    <h4>✤ 學生會秘書部 / 選務部 ✤</h4>
                   </div>
                   <div class="club-body">
                     <h5 class="sub-title">執行內容 Key Executions</h5>
                     <ul class="task-list">
-                      <li>擔任校園特約商店總召，成功簽約<strong>30+</strong>合作店家。</li>
-                      <li>協助舉辦高中職飢餓十二活動。</li>
-                      <li>協助撰寫會議記錄、製作活動表單等相關文件。</li>
-                      <li>協助公關部紀錄與討論特約商店相關事宜。</li>
+                      <li>負責撰寫會議紀錄、追蹤決議事項，並設計標準化活動表單，確保團隊資訊同步與行政流程順暢。</li>
+                      <li>參與「共振月台音樂祭」與「吾夜校園演唱會」籌備，協助前置行政庶務與現場機動調度。</li>
+                      <li>協助籌辦全校性學生會長選舉，嚴格執行選務規範與流程控管，確保程序之嚴謹與公正性。</li>
                     </ul>
                   </div>
                   <div class="club-footer takeaway-box">
                     <h5 class="sub-title">核心收穫 Key Takeaways</h5>
-                    <p>學會在繁瑣工作中保持組織運作流暢。</p>
+                    <p>在多線並行的任務中提升細節控管能力，建立標準化文件以有效溝通。</p>
                   </div>
                 </div>
 
                 <div class="club-card">
                   <div class="club-header">
-                    <h4>科技志工服務社</h4>
+                    <h4>✤ 科技志工服務社 ✤</h4>
                   </div>
                   <div class="club-body">
                     <h5 class="sub-title">執行內容 Key Executions</h5>
                     <ul class="task-list">
-                      <li>每週籌備活動，至社區據點陪伴爺爺奶奶。</li>
+                      <li>每週針對社區據點長者的特性與需求，籌備專屬互動活動，從企劃發想到現場帶領，確保活動的參與度與適配性。</li>
+                      <li>走入社區提供長者實質溫暖的陪伴，建立信任關係，並在互動過程中，細心觀察高齡族群的生活習慣與真實反饋。</li>
                     </ul>
                   </div>
                   <div class="club-footer takeaway-box">
@@ -336,7 +334,8 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, watch } from 'vue'
+import { useRoute } from 'vue-router'
 import {
   Award,
   BarChart2,
@@ -346,6 +345,24 @@ import {
 } from 'lucide-vue-next'
 
 const activeTab = ref('competition')
+const route = useRoute()
+const validTabs = ['competition', 'academic', 'club']
+
+function syncTabFromRoute() {
+  const tab = route.query.tab
+  if (typeof tab === 'string' && validTabs.includes(tab)) {
+    activeTab.value = tab
+  }
+}
+
+syncTabFromRoute()
+
+watch(
+  () => route.query.tab,
+  () => {
+    syncTabFromRoute()
+  }
+)
 </script>
 
 <style scoped src="../assets/portfolio.css"></style>

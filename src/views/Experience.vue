@@ -13,7 +13,7 @@
       <div class="job-card">
         <div class="job-header">
           <div class="job-title-group">
-            <h4 class="company-name">巨鷗科技股份有限公司</h4>
+            <h4 class="company-name">⚝ 巨鷗科技股份有限公司</h4>
             <p class="job-role">SMART-IM  專案管理實習生</p>
           </div>
           <div class="job-duration">
@@ -30,9 +30,9 @@
         </div>
 
         <div class="job-contributions">
-          <h5 class="contributions-title">❁ Key Contributions 
-            <span class="project-tag">#國立政治大學深耕計畫專案管考平台</span>
-              <span class="project-tag">#塑膠工業技術發展中心人才培訓網站</span></h5>
+          <h5 class="contributions-title">✤ Key Contributions 
+            <span class="project-tag">✿ 國立政治大學深耕計畫專案管考平台</span>
+              <span class="project-tag">✿ 塑膠工業技術發展中心人才培訓網站</span></h5>
              
           <ul class="contributions-list">
             <li
@@ -61,7 +61,7 @@
           </ul>
 
           <div class="internship-reflection">
-            <h5 class="reflection-title">❁ Internship Reflection 實習心得</h5>
+            <h5 class="reflection-title">✤ Internship Reflection 實習心得</h5>
             <p>
               在巨鷗科技為期十八週的實習，讓我第一次真正接觸到資訊系統從規劃到落地的完整過程。相較於學校課程多以理論與案例討論為主，實際參與專案後才發現，職場上的專案執行更重視需求釐清、溝通協調以及進度管理等多方面能力。這段實習不僅讓我理解系統開發的實務流程，也讓我開始思考如何以更有系統的方式處理專案任務。
             </p>
