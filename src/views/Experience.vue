@@ -2,35 +2,7 @@
   <div class="experience-container">
     <!-- <h2 class="page-title">個人經歷 Experience</h2> -->
 
-    <div class="tabs-wrap" role="tablist" aria-label="經歷分類頁籤">
-      <button
-        id="work-tab"
-        class="tab-button"
-        :class="{ 'is-active': activeTab === 'work' }"
-        type="button"
-        role="tab"
-        :aria-selected="activeTab === 'work'"
-        aria-controls="tab-panel-work"
-        @click="activeTab = 'work'"
-      >
-        💼 工作經驗
-      </button>
-      <button
-        id="club-tab"
-        class="tab-button"
-        :class="{ 'is-active': activeTab === 'club' }"
-        type="button"
-        role="tab"
-        :aria-selected="activeTab === 'club'"
-        aria-controls="tab-panel-club"
-        @click="activeTab = 'club'"
-      >
-        🌟 社團經驗
-      </button>
-    </div>
-
     <section
-      v-if="activeTab === 'work'"
       id="tab-panel-work"
       class="experience-section"
       role="tabpanel"
@@ -106,70 +78,6 @@
         </div>
       </div>
     </section>
-
-    <section
-      v-else
-      id="tab-panel-club"
-      class="experience-section"
-      role="tabpanel"
-      aria-labelledby="club-tab"
-    >
-      <h3 class="section-title">社團經驗 Leadership & Extracurricular</h3>
-
-      <div class="clubs-grid">
-        <div class="club-card">
-          <div class="club-header">
-            <h4>學生會副會長</h4>
-          </div>
-          <div class="club-body">
-            <h5 class="sub-title">執行內容 Key Executions</h5>
-            <ul class="task-list">
-              <li>參與籌備四校聯歡晚會、共振月台音樂祭、吾夜校園演唱會。</li>
-              <li>協助辦理校內學生會長選拔。</li>
-            </ul>
-          </div>
-          <div class="club-footer takeaway-box">
-            <h5 class="sub-title">核心收穫 Key Takeaways</h5>
-            <p>在多方協調中精煉跨部門溝通能力。</p>
-          </div>
-        </div>
-
-        <div class="club-card">
-          <div class="club-header">
-            <h4>學生會秘書部 / 選務部</h4>
-          </div>
-          <div class="club-body">
-            <h5 class="sub-title">執行內容 Key Executions</h5>
-            <ul class="task-list">
-              <li>擔任校園特約商店總召，成功簽約<strong> 30+ </strong>合作店家。</li>
-              <li>協助舉辦高中職飢餓十二活動。</li>
-              <li>協助撰寫會議記錄、製作活動表單等相關文件。</li>
-              <li>協助公關部紀錄與討論特約商店相關事宜。</li>
-            </ul>
-          </div>
-          <div class="club-footer takeaway-box">
-            <h5 class="sub-title">核心收穫 Key Takeaways</h5>
-            <p>學會在繁瑣工作中保持組織運作流暢。</p>
-          </div>
-        </div>
-
-        <div class="club-card">
-          <div class="club-header">
-            <h4>科技志工服務社</h4>
-          </div>
-          <div class="club-body">
-            <h5 class="sub-title">執行內容 Key Executions</h5>
-            <ul class="task-list">
-              <li>每週籌備活動，至社區據點陪伴爺爺奶奶。</li>
-            </ul>
-          </div>
-          <div class="club-footer takeaway-box">
-            <h5 class="sub-title">核心收穫 Key Takeaways</h5>
-            <p>深刻體會社會公益與同理心的力量，透過互動企劃帶給他人笑容與溫暖。</p>
-          </div>
-        </div>
-      </div>
-    </section>
   </div>
 </template>
 
@@ -177,7 +85,6 @@
 import { ref } from 'vue'
 import '../assets/experience.css'
 
-const activeTab = ref('work')
 const openContributions = ref([0])
 
 const contributions = [

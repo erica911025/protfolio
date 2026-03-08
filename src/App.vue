@@ -4,9 +4,9 @@
     <header class="navbar">
       <nav class="nav-container">
         <!-- 使用 router-link 進行導覽，Vue Router 會自動處理 active 狀態 -->
-        <router-link to="/" class="nav-link">首頁</router-link>
-        <router-link to="/portfolio" class="nav-link">作品集</router-link>
-        <router-link to="/experience" class="nav-link">個人經歷</router-link>
+        <router-link to="/" class="nav-link">首頁 HOME</router-link>
+        <router-link to="/portfolio" class="nav-link">就學經歷 LEARNING EXPERIENCE</router-link>
+        <router-link to="/experience" class="nav-link">工作經歷 WORK EXPERIENCE</router-link>
       </nav>
     </header>
 
@@ -19,6 +19,20 @@
         </transition>
       </router-view>
     </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <p class="footer-title">Personal Website Info</p>
+          <p class="footer-subtitle">Fang-Yu Zhang | About Me Portfolio</p>
+        </div>
+        <div class="footer-contact">
+          <p class="footer-contact-title">聯絡資訊 Contact</p>
+          <a href="tel:0963821856" class="footer-link">0963-821-856</a>
+          <a href="mailto:ericayu911025@gmail.com" class="footer-link">ericayu911025@gmail.com</a>
+        </div>
+      </div>
+    </footer>
   </div>
 </template>
 

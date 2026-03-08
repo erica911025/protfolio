@@ -401,6 +401,24 @@
     padding: 24px 20px 16px 20px;
   }
 
+  .experience-container .company-name {
+    font-size: 1.15rem;
+  }
+
+  .experience-container .job-role {
+    font-size: 0.98rem;
+  }
+
+  .experience-container .job-duration {
+    width: 100%;
+  }
+
+  .experience-container .job-body {
+    padding: 0 20px;
+    font-size: 0.94rem;
+    line-height: 1.72;
+  }
+
   .experience-container .job-projects {
     padding: 16px 20px 0 20px;
   }
@@ -409,8 +427,89 @@
     padding: 20px;
   }
 
+  .experience-container .contributions-title {
+    flex-wrap: wrap;
+    gap: 8px;
+    font-size: 1.08rem;
+  }
+
+  .experience-container .project-tag {
+    font-size: 0.8rem;
+    padding: 4px 10px;
+  }
+
+  .experience-container .contribution-item {
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+  }
+
+  .experience-container .contribution-item--1,
+  .experience-container .contribution-item--2,
+  .experience-container .contribution-item--3,
+  .experience-container .contribution-item--4,
+  .experience-container .contribution-item--5 {
+    border-left-width: 6px;
+  }
+
+  .experience-container .contribution-toggle {
+    gap: 9px;
+    padding: 11px 12px;
+  }
+
+  .experience-container .bullet-icon {
+    min-width: 32px;
+    height: 32px;
+    font-size: 0.74rem;
+  }
+
+  .experience-container .contribution-heading {
+    font-size: 0.92rem;
+  }
+
+  .experience-container .contribution-body {
+    font-size: 0.9rem;
+    padding: 0 12px 12px 48px;
+  }
+
+  .experience-container .internship-reflection {
+    margin-top: 16px;
+    padding: 14px 14px;
+  }
+
+  .experience-container .reflection-title {
+    font-size: 1.02rem;
+  }
+
+  .experience-container .internship-reflection p {
+    font-size: 0.92rem;
+    line-height: 1.72;
+    padding: 0;
+  }
+
   .experience-container .clubs-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  .experience-container .job-header,
+  .experience-container .job-body,
+  .experience-container .job-contributions {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .experience-container .company-name {
+    font-size: 1.02rem;
+  }
+
+  .experience-container .job-role {
+    font-size: 0.9rem;
+  }
+
+  .experience-container .date-badge {
+    font-size: 0.78rem;
+    padding: 5px 10px;
   }
 }
 
