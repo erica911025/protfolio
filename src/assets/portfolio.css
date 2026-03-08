@@ -504,13 +504,14 @@
 .academic-card {
   background: #ffffff;
   /* border: 1px solid #e2e8f0; */
-  border-start-end-radius: 00px;
+  border-start-end-radius: 20px;
   padding: 24px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.119);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 5px solid #e8e1d2;
 }
 
 .academic-card:hover {
@@ -524,9 +525,10 @@
 }
 
 .academic-layout {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 24px;
+  align-items: start;
 }
 
 .status-badge {
@@ -536,9 +538,22 @@
   font-weight: bold;
   margin-bottom: 0px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: start;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.status-badge2 {
+  display: inline-block;
+  padding:  0px;
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 0px;
+  display: flex;
   align-items: center;
   flex-wrap: wrap;
-  border-left: 5px solid #e8e1d2;
 }
 
 .passed {
@@ -547,13 +562,13 @@
   /* border: 1px solid #b2f5ea; */
   display: flex;
   justify-content: space-around;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .pending{
   display: flex;
-  justify-content: space-around;
-  margin:0 0 10px 10px;
+  justify-content: space-between;
+  margin:5px 0 10px 0px;
 }
 
 .status-text {
@@ -568,13 +583,31 @@
 }
 
 .status-textn {
-  font-size: 14px;
+  font-size: 13px;
   color: #b95d2f;
   margin:0 16px;
   background-color: #cbd5e0;
   color: #2d3748;
   padding: 2px 10px;
   border-radius: 8px;
+}
+
+.badge-preview-link {
+  display: block;
+  margin: 0 14px 14px 10px;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid #d8e7f1;
+  background: #f8fbfd;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+}
+
+.badge-preview-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit:fill;
+  background: #ffffff;
 }
 
 .academic-title {
@@ -588,9 +621,9 @@
   font-size: 16px;
   color: #4a5568;
   line-height: 1.6;
-  margin: 0;
-  padding-top: 16px;
+  padding: 20px 0;
   border-top: 1px solid #edf2f7;
+  font-weight: 450;
 }
 
 /* ================= RWD 響應式設定 ================= */

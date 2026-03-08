@@ -1,5 +1,20 @@
 <template>
   <div class="home-container">
+    <div class="snow-layer" aria-hidden="true">
+      <span
+        v-for="flake in snowflakes"
+        :key="flake.id"
+        class="snowflake"
+        :style="{
+          '--flake-left': flake.left,
+          '--flake-size': flake.size,
+          '--flake-duration': flake.duration,
+          '--flake-delay': flake.delay,
+          '--flake-opacity': flake.opacity,
+        }"
+      ></span>
+    </div>
+
     <section class="hero-section fade-in">
         <div class="hero-content">
         <div class="hero-visual">
@@ -200,6 +215,22 @@
 </template>
 
 <script setup>
-// 在這個基礎架構中，Home.vue 作為純粹的佈局元件，
-// 路由切換已經交由 vue-router 自動處理，這裡不需要額外的邏輯。
+const snowflakeCount = 32;
+
+const snowflakes = Array.from({ length: snowflakeCount }, (_, index) => {
+  const size = `${(Math.random() * 5 + 4).toFixed(1)}px`;
+  const left = `${(Math.random() * 100).toFixed(2)}vw`;
+  const duration = `${(Math.random() * 7 + 10).toFixed(2)}s`;
+  const delay = `${(Math.random() * 10).toFixed(2)}s`;
+  const opacity = (Math.random() * 0.5 + 0.35).toFixed(2);
+
+  return {
+    id: index,
+    size,
+    left,
+    duration,
+    delay,
+    opacity,
+  };
+});
 </script>

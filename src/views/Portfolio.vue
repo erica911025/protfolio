@@ -186,15 +186,28 @@
     >
       <h3 class="section-title">❁ 學術投稿 Academic Submissions</h3>
 
+      <div class="research-capabilities">
+        <p class="capabilities-title">核心研究能力展現：</p>
+        <div class="tags-cloud">
+          <span class="skill-tag"># 系統性問題解決</span>
+          <span class="skill-tag"># AI 協作與流程賦能</span>
+          <span class="skill-tag"># 概念驗證與實作</span>
+          <span class="skill-tag"># 專業企劃與提案撰寫</span>
+          <span class="skill-tag"># 複雜資訊視覺化</span>
+          <span class="skill-tag"># 長篇邏輯架構化</span>
+        </div>
+      </div>
+
+
       <div class="academic-layout">
         <div class="status-badge">
-          <div class="pending">
-          <span class=" passed">▸ 113年 國科會大專學生研究計畫</span>
-          <p class="status-text">通過</p>
-          </div>
 
           <div class="academic-grid">
           <div class="academic-card">
+            <div class="pending">
+              <span class=" passed">▸ 113年 國科會大專學生研究計畫</span>
+              <p class="status-text">通過</p>
+            </div>
             <div class="card-top">
               <h4 class="academic-title">運用氣體辨識<br>於獨居老人居家消防安全輔助之研究</h4>
             </div>
@@ -203,17 +216,22 @@
                 透過氣體辨識技術監測居家消防隱患。運用半導體式感測器與 Arduino Uno，結合藍芽與雲端技術，發展消防安全警示系統。
               </p>
             </div>
+                        <img
+              class="badge-preview-image"
+              src="https://drive.google.com/thumbnail?id=1xiOeD9jR4MzVXgN7nYaUfZRowKAtW-_u&sz=w1200"
+              alt="113年國科會大專學生研究計畫文件預覽"
+            >
           </div>
         </div>
         </div>
 
-          <div class="status-badge">
-            <div class="pending">
+          <div class="status-badge2">
+
+            <div class="academic-card">
+             <div class="pending">
               <span class="passed">▸ 115年 教育部教學實踐研究計畫</span>
               <p class="status-textn">審查中</p>
             </div>
-
-            <div class="academic-card">
             <div class="card-top">
               <h4 class="academic-title">整合生成式人工智慧於DevOps專案導向軟體工程與管理之教學流程設計與其學習成效之研究</h4>
             </div>
@@ -222,23 +240,17 @@
                 建構並實證一套以 GAI 輔助 DevOps 的專案學習模式，使學生能在 DevOps 全流程脈絡下，培養 GAI 協作素養、流程思維與系統性問題解決能力。
               </p>
             </div>
+                          <img
+                class="badge-preview-image"
+                src="https://drive.google.com/thumbnail?id=14vy3De0JQ76dfO6AfBJR2jJaHbsL3Zmv&sz=w1200"
+                alt="教育部教學流程圖預覽"
+              >
           </div>
           </div>
       </div>
 
         
       
-      <div class="research-capabilities">
-        <p class="capabilities-title">核心研究能力展現：</p>
-        <div class="tags-cloud">
-          <span class="skill-tag">系統性問題解決</span>
-          <span class="skill-tag">AI 協作與流程賦能</span>
-          <span class="skill-tag">概念驗證與實作</span>
-          <span class="skill-tag">專業企劃與提案撰寫</span>
-          <span class="skill-tag">複雜資訊視覺化</span>
-          <span class="skill-tag">長篇邏輯架構化</span>
-        </div>
-      </div>
 
     </section>
 
