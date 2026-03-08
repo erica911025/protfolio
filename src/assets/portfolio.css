@@ -1,0 +1,666 @@
+/* ================= 共用設定 ================= */
+.portfolio-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0px;
+  font-family: 'Helvetica Neue', Arial, 'Noto Sans TC', sans-serif;
+  color: #333;
+}
+
+.page-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1a202c;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.portfolio-section {
+  margin-bottom: 60px;
+  animation: panel-fade 0.3s ease;
+}
+
+.tabs-wrap {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 28px;
+  padding: 6px;
+  border-radius: 999px;
+  background: linear-gradient(130deg, #f8fafc 0%, #f9f6ef 100%);
+  border: 1px solid #e8dfcf;
+  width: fit-content;
+}
+
+.tab-button {
+  border: none;
+  background: transparent;
+  color: #5f6f7f;
+  font-size: 0.96rem;
+  font-weight: 600;
+  padding: 10px 18px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.tab-button:hover {
+  color: #364758;
+  background-color: rgba(255, 255, 255, 0.72);
+}
+
+.tab-button.is-active {
+  color: #4d2f1f;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(191, 142, 89, 0.2);
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #51708f;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 10px;
+  margin-bottom: 24px;
+}
+
+/* ================= 區塊一：競賽專題 ================= */
+.featured-project {
+  background: #ffffff;
+  border: 1px solid #f0efe2;
+  border-left: 5px solid #f2e6bf;
+  border-radius:0 35px 35px 0;
+  overflow: hidden;
+  box-shadow: 0 16px 34px rgba(15, 23, 42, 0.09);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featured-project:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 24px 45px rgba(15, 23, 42, 0.12);
+}
+
+.award-gradient {
+  background: linear-gradient(120deg, #fef3c7 0%, #fbe692ec 38%, #f8fafc 100%);
+}
+
+.awards-header {
+  padding: 28px 32px;
+  border-bottom: 1px solid #f1f5f9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.awards-main {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.awards-title {
+  margin: 0;
+  font-size: 20px;
+  color: #614f3c;
+  font-weight: 700;
+}
+
+.awards-subtitle {
+  margin: 6px 0 0;
+  color: #547079;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.light {
+  color: #8d5247;
+  text-decoration: double underline rgba(134, 112, 67, 0.5)1.5px;
+}
+
+.award-rank {
+  background: rgba(255, 255, 255, 0.78);
+  color: #854d0e;
+  padding: 8px 14px;
+  border-radius: 12px;
+  border: 1px solid #fcd34d;
+  font-weight: 700;
+}
+
+.project-layout {
+  display: flex;
+  justify-content: center;
+}
+
+.project-media {
+  width: 34%;
+  min-width: 270px;
+  background: #f8fafc;
+  padding: 30px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  border-right: 1px solid #f1f5f9;
+}
+
+.logo-panel {
+  width: 100%;
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.06);
+  display: flex;
+  justify-content: center;
+}
+
+.project-logo {
+  max-height: 160px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.project-gallery {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.gallery-photo {
+  width: 100%;
+  aspect-ratio: 16 / 10.5;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+}
+
+.project-name-wrap {
+  text-align: center;
+}
+
+.project-name {
+  margin: 0;
+  font-size: 1.6rem;
+  color: #2563eb;
+  font-weight: 800;
+}
+
+.project-quote {
+  margin: 8px 0 0;
+  color: #64748b;
+  font-size: 0.95rem;
+  font-style: italic;
+}
+
+.project-content {
+  width: 90%;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.content-block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.content-title0 {
+  width: fit-content;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 20px;
+  color: #684b3a;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+  padding: 0 6px;
+}
+
+.content-title0::after {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background-color: rgba(245, 226, 209, 0.755);
+  z-index: -1;
+}
+
+.content-text0 {
+  margin: 0;
+  color: #694f47;
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+.content-title {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+  color: #5d7864;
+  font-weight: 700;
+}
+
+.content-text {
+  margin: 0;
+  color: #475569;
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+.role-grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.role-card {
+  border-radius:0 500px 500px 0;
+  padding:5px 10px 5px 0;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  margin: 5px 0;
+  box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.6), inset 0 -1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.role-card h6 {
+  margin: 0;
+  font-size: 18px;
+  min-width: 80px;
+}
+
+.role-card p {
+  margin: 5px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.role-card-blue {
+  background: #eff6ff;
+}
+
+.role-card-blue h6 {
+  color: #30577f;
+}
+
+.role-card-blue p {
+  color: #425470;
+}
+
+.role-card-orange {
+  background: #fff7ed;
+}
+
+.role-card-orange h6 {
+  color: #97674f;
+}
+
+.role-card-orange p {
+  color: #7c2d12;
+}
+
+.role-card-pink {
+  background: #fdf2f8;
+}
+
+.role-card-pink h6 {
+  color: #9d174d;
+}
+
+.role-card-pink p {
+  color: #873f5d;
+}
+
+.role-card-green {
+  background: #ebf5f0;
+}
+
+.role-card-green h6 {
+  color: #065f46;
+}
+
+.role-card-green p {
+  color: #366256;
+}
+
+.role-icon-wrap {
+  background: #ffffff;
+  width: fit-content;
+  border-radius: 0px 20px 20px 0px;
+  padding: 6px 20px;
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.role-icon-blue {
+  color: #7383a6;
+}
+
+.role-icon-pink {
+  color: #bc8aa0;
+}
+
+.role-icon-green {
+  color: #679284;
+}
+
+.role-icon-orange {
+  color: #cd8a5a;
+}
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.detail-block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.detail-block-split {
+  border-left: 2px solid #e2e8f0;
+  padding-left: 20px;
+}
+
+.star-block {
+  background: #0f172a;
+  border-radius: 30px;
+  color: #ffffff;
+  padding: 24px;
+}
+
+.star-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+}
+
+.star-header h5 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.star-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.star-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.star-label {
+  margin: 0;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.star-label-danger {
+  color: #f87171;
+}
+
+.star-label-success {
+  color: #34d399;
+}
+
+.star-text {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.82);
+  line-height: 1.7;
+  font-size: 0.92rem;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.icon-award {
+  width: 38px;
+  height: 38px;
+  color: #854d0e;
+}
+
+.icon-blue {
+  color: #3b82f6;
+}
+
+.icon-purple {
+  color: #8b5cf6;
+}
+
+.icon-yellow {
+  color: #eab308;
+}
+
+.icon-star {
+  color: #60a5fa;
+}
+
+/* ================= 區塊二：學術投稿 ================= */
+.research-capabilities {
+  margin-bottom: 24px;
+  background-color: #ffffff;
+  padding: 20px 25px;
+  border-radius: 20px;
+  border: 3px dashed #e0dbcb;
+}
+
+.capabilities-title {
+  font-size: 18px;
+  color: #834f31;
+  margin: 0 0 15px 0;
+  font-weight: bold;
+}
+
+.tags-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.skill-tag {
+  background-color: #ebf0e2;
+  color: #2d3748;
+  padding: 6px 16px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.skill-tag:hover {
+  background-color: #cbd5e0;
+}
+
+.academic-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.academic-card {
+  background: #ffffff;
+  /* border: 1px solid #e2e8f0; */
+  border-start-end-radius: 00px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.119);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.academic-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.08);
+  border-color: #cbd5e0;
+}
+
+.card-top {
+  margin-bottom: 16px;
+}
+
+.academic-layout {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.status-badge {
+  display: inline-block;
+  padding:  0px;
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 0px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  border-left: 5px solid #e8e1d2;
+}
+
+.passed {
+  /* background-color: #e6fffa; */
+  color: #8c634e;
+  /* border: 1px solid #b2f5ea; */
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
+}
+
+.pending{
+  display: flex;
+  justify-content: space-around;
+  margin:0 0 10px 10px;
+}
+
+.status-text {
+  font-size: 14px;
+  color: #b95d2f;
+  margin:0 16px;
+  background-color: #65884e;
+  color: #ffffff;
+  padding: 2px 10px;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.status-textn {
+  font-size: 14px;
+  color: #b95d2f;
+  margin:0 16px;
+  background-color: #cbd5e0;
+  color: #2d3748;
+  padding: 2px 10px;
+  border-radius: 8px;
+}
+
+.academic-title {
+  font-size: 20px;
+  color: #497f98;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.academic-content {
+  font-size: 16px;
+  color: #4a5568;
+  line-height: 1.6;
+  margin: 0;
+  padding-top: 16px;
+  border-top: 1px solid #edf2f7;
+}
+
+/* ================= RWD 響應式設定 ================= */
+@media (max-width: 768px) {
+  .tabs-wrap {
+    width: 100%;
+    border-radius: 14px;
+    padding: 8px;
+  }
+
+  .tab-button {
+    flex: 1;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px 12px;
+  }
+
+  .awards-header {
+    padding: 20px;
+  }
+
+  .awards-title {
+    font-size: 1.08rem;
+  }
+
+  .project-layout {
+    flex-direction: column;
+  }
+
+  .project-media,
+  .project-content {
+    width: 100%;
+  }
+
+  .project-media {
+    min-width: 0;
+    border-right: none;
+    border-bottom: 1px solid #f1f5f9;
+  }
+
+  .project-content {
+    padding: 24px 20px;
+  }
+
+  .role-grid,
+  .detail-grid,
+  .star-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-block-split {
+    border-left: none;
+    padding-left: 0;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 16px;
+  }
+
+  .academic-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@keyframes panel-fade {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
