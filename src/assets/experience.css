@@ -8,7 +8,7 @@
 }
 
 .experience-container .page-title {
-  font: size 18px;;
+  font-size:  18px;;
   font-weight: bold;
   color: #1a202c;
   margin-bottom: 40px;
@@ -85,7 +85,7 @@
   justify-content: space-between;
   align-items: flex-start;
   padding: 32px 32px 20px 32px;
-  background-color: #f8fafc;
+  background-color: #e9f3f2;
   border-bottom: 1px solid #f1f5f9;
 }
 
@@ -94,6 +94,13 @@
   color: #955e45;
   margin: 0 0 8px 0;
   font-weight: 700;
+}
+
+.job-body {
+  padding: 0 32px;
+  color: #475569;
+  font-size: 15px;
+  line-height: 1.75;
 }
 
 .experience-container .job-role {
@@ -105,7 +112,7 @@
 
 .experience-container .date-badge {
   display: inline-block;
-  background-color: #e2e8f0;
+  background-color: #ffffff;
   color: #475569;
   padding: 6px 14px;
   border-radius: 20px;
@@ -117,16 +124,16 @@
   padding: 20px 32px 0 32px;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: 12px;
 }
 
 .experience-container .project-tag {
-  background-color: #eff6ff;
-  color: #1d4ed8;
-  border: 1px solid #bfdbfe;
-  padding: 6px 12px;
-  border-radius: 6px;
-  font-size: 0.85rem;
+  background-color: #e3f0e7ad;
+  color: #426150;
+  padding: 5px 15px;
+  border-radius: 15px;
+  font-size: 14px;
   font-weight: 500;
 }
 
@@ -136,42 +143,158 @@
 
 .experience-container .contributions-title {
   margin: 0 0 16px 0;
-  font-size: 1.15rem;
-  color: #1e293b;
+  font-size: 20px;
+  color: #7a594d;
   font-weight: 700;
-  border-left: 4px solid #3b82f6;
-  padding-left: 12px;
+  padding-left: 1px;
+  display: flex;
+  gap: 16px;
+
 }
 
 .experience-container .contributions-list {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  display: grid;
+  gap: 12px;
 }
 
-.experience-container .contributions-list li {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 16px;
-  line-height: 1.7;
-  color: #475569;
-  font-size: 1rem;
-}
-
-.experience-container .contributions-list li:last-child {
-  margin-bottom: 0;
+.experience-container .contribution-item {
+  border-top-right-radius: 24px;
+  border-bottom-right-radius: 24px;
+  border: 1px solid #dbe7f3;
+  background: #ffffff;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(15, 23, 42, 0.05);
+  animation: contribution-rise 0.45s ease both;
 }
 
 .experience-container .bullet-icon {
-  color: #3b82f6;
-  margin-right: 12px;
-  font-size: 1.2rem;
-  line-height: 1.5;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 38px;
+  height: 38px;
+  border-radius: 12px;
+  color: #0f4c75;
+  background: #e8f2fb;
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.02em;
 }
 
-.experience-container .contributions-list strong {
-  color: #1e293b;
-  font-weight: 600;
+
+.experience-container .contribution-toggle {
+  width: 100%;
+  border: 0;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 16px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.experience-container .contribution-heading {
+  color: #445a7c;
+  font-weight: 700;
+  font-size: 1rem;
+  flex: 1;
+}
+
+.experience-container .contribution-arrow {
+  color: #4a6d8b;
+  font-size: 0.9rem;
+  transform: rotate(-90deg);
+  transition: transform 0.25s ease;
+}
+
+.experience-container .contribution-arrow.is-open {
+  transform: rotate(0deg);
+}
+
+.experience-container .contribution-body {
+  color: #475569;
+  font-size: 0.96rem;
+  line-height: 1.75;
+  padding: 0 16px 16px 66px;
+}
+
+.experience-container .contribution-collapse-enter-active,
+.experience-container .contribution-collapse-leave-active {
+  transition: all 0.28s ease;
+  overflow: hidden;
+}
+
+.experience-container .contribution-collapse-enter-from,
+.experience-container .contribution-collapse-leave-to {
+  opacity: 0;
+  max-height: 0;
+  transform: translateY(-6px);
+}
+
+.experience-container .contribution-collapse-enter-to,
+.experience-container .contribution-collapse-leave-from {
+  opacity: 1;
+  max-height: 180px;
+  transform: translateY(0);
+}
+
+.contribution-item :hover{
+  color: #4685a7;
+}
+.experience-container .contribution-item--1 { border-left: 10px solid #a2c1d4; }
+.experience-container .contribution-item--2 { border-left: 10px solid #bad5ca; }
+.experience-container .contribution-item--3 { border-left: 10px solid #e3d6ab; }
+.experience-container .contribution-item--4 { border-left: 10px solid rgb(234, 191, 181); }
+.experience-container .contribution-item--5 { border-left: 10px solid #dac0e0; }
+
+.experience-container .contribution-item:nth-child(1) { animation-delay: 0.03s; }
+.experience-container .contribution-item:nth-child(2) { animation-delay: 0.07s; }
+.experience-container .contribution-item:nth-child(3) { animation-delay: 0.11s; }
+.experience-container .contribution-item:nth-child(4) { animation-delay: 0.15s; }
+.experience-container .contribution-item:nth-child(5) { animation-delay: 0.19s; }
+
+.experience-container .internship-reflection {
+  margin-top: 22px;
+  padding:18px 25px;
+  border-radius: 14px;
+  background: linear-gradient(170deg, #fafcff 0%, #f8f6fb 100%);
+  border: 1px solid #dfe7f2;
+}
+
+.experience-container .reflection-title {
+  margin: 0 0 12px 0;
+  color: #5f4f7d;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.experience-container .internship-reflection p {
+  margin: 0 0 12px 0;
+  padding: 5px;
+  color: #475569;
+  line-height: 1.85;
+  text-align: justify;
+  font-size: 16px;
+}
+
+.experience-container .internship-reflection p:last-child {
+  margin-bottom: 0;
+}
+
+@keyframes contribution-rise {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* ================= 區塊二：社團經驗 三欄式卡片 ================= */
