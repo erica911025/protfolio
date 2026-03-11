@@ -80,7 +80,8 @@
 }
 
 .award-gradient {
-  background: linear-gradient(120deg, #fef3c7 0%, #fbe692ec 38%, #f8fafc 100%);
+  background-color: #fff5c8;
+
 }
 
 .awards-header {
@@ -102,7 +103,7 @@
 .awards-title {
   margin: 0;
   font-size: 20px;
-  color: #614f3c;
+  color: #4d7989;
   font-weight: 700;
 }
 
@@ -206,6 +207,7 @@
 .content-block {
   display: flex;
   flex-direction: column;
+  align-content: center;
   gap: 10px;
 }
 
@@ -232,6 +234,58 @@
   height: 10px;
   background-color: rgba(245, 226, 209, 0.755);
   z-index: -1;
+}
+
+.snapshot-toggle {
+  border: none;
+  background: transparent;
+  width: fit-content;
+  justify-content: flex-start;
+  cursor: pointer;
+  padding: 0;
+  gap: 8px;
+}
+
+.snapshot-toggle::after {
+  display: none;
+}
+
+.snapshot-toggle-label {
+  position: relative;
+  z-index: 1;
+}
+
+.snapshot-toggle-label::after {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background-color: rgba(245, 226, 209, 0.755);
+  z-index: -1;
+}
+
+.snapshot-toggle-icon {
+  font-size: 25px;
+  color: #a57f6f;
+  transition: transform 0.24s ease;
+}
+
+.snapshot-toggle-icon.is-open {
+  transform: rotate(180deg);
+}
+
+.snapshot-details {
+  max-height: 520px;
+  overflow: hidden;
+  opacity: 1;
+  transition: max-height 0.35s ease, opacity 0.22s ease;
+}
+
+.snapshot-details.is-collapsed {
+  max-height: 0;
+  opacity: 0;
 }
 
 .content-text0 {
@@ -443,7 +497,8 @@
 .icon-award {
   width: 38px;
   height: 38px;
-  color: #854d0e;
+  color: #c2893f;
+  margin-right: 20px;
 }
 
 .icon-blue {
@@ -464,16 +519,16 @@
 
 /* ================= 區塊二：學術投稿 ================= */
 .research-capabilities {
-  margin-bottom: 24px;
+  margin-bottom: 35px;
   background-color: #ffffff;
   padding: 20px 25px;
   border-radius: 20px;
-  border: 3px dashed #e0dbcb;
+  border: 3px dashed #cbdce0;
 }
 
 .capabilities-title {
   font-size: 18px;
-  color: #834f31;
+  color: #4c7c90;
   margin: 0 0 15px 0;
   font-weight: bold;
 }
@@ -485,10 +540,10 @@
 }
 
 .skill-tag {
-  background-color: #ebf0e2;
-  color: #2d3748;
-  padding: 6px 16px;
-  border-radius: 8px;
+  background-color: #e2edf0;
+  color: #4a6189;
+  padding: 8px 25px;
+  border-radius: 80px;
   font-size: 16px;
   font-weight: 500;
   transition: background-color 0.2s ease;
@@ -508,13 +563,16 @@
   background: #ffffff;
   /* border: 1px solid #e2e8f0; */
   border-start-end-radius: 20px;
+  border-end-end-radius: 20px;
   padding: 24px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.119);
+  /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.119); */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-left: 5px solid #e8e1d2;
+  border: #c2d4cc 2px solid;
+  border-left: 8px solid #c2d4cc;
+
 }
 
 .academic-card:hover {
@@ -525,6 +583,43 @@
 
 .card-top {
   margin-bottom: 16px;
+}
+
+.academic-toggle {
+  width: 100%;
+  border: none;
+  background: transparent;
+  padding: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.academic-toggle-icon {
+  color: #6f8ea5;
+  font-size: 1.1rem;
+  line-height: 1;
+  margin-top: 6px;
+  transition: transform 0.24s ease;
+}
+
+.academic-toggle-icon.is-open {
+  transform: rotate(180deg);
+}
+
+.academic-details {
+  max-height: 920px;
+  overflow: hidden;
+  opacity: 1;
+  transition: max-height 0.35s ease, opacity 0.22s ease;
+}
+
+.academic-details.is-collapsed {
+  max-height: 0;
+  opacity: 0;
 }
 
 .academic-layout {
@@ -620,6 +715,23 @@
   margin: 0;
 }
 
+.academic-title--compact {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.academic-keyword {
+  display: inline;
+  font-weight: 700;
+  color: #6b3f2a;
+  background: linear-gradient(transparent 62%, rgba(255, 214, 153, 0.6) 62%);
+}
+
+.academic-keyword--devops {
+  color: #2d5670;
+  background: linear-gradient(transparent 62%, rgba(255, 240, 180, 0.899) 62%);
+}
+
 .academic-content {
   font-size: 16px;
   color: #4a5568;
@@ -627,6 +739,12 @@
   padding: 20px 0;
   border-top: 1px solid #edf2f7;
   font-weight: 450;
+}
+
+.academic-toggle:focus-visible {
+  outline: 2px solid #9fb8ce;
+  outline-offset: 4px;
+  border-radius: 8px;
 }
 
 /* ================= RWD 響應式設定 ================= */

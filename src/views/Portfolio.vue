@@ -221,18 +221,28 @@
               <p class="status-text">通過</p>
             </div>
             <div class="card-top">
-              <h4 class="academic-title">運用氣體辨識<br>於獨居老人居家消防安全輔助之研究</h4>
+              <button
+                type="button"
+                class="academic-toggle"
+                :aria-expanded="expandedAcademic.nstc"
+                @click="toggleAcademic('nstc')"
+              >
+                <h4 class="academic-title">運用氣體辨識<br>於獨居老人居家消防安全輔助之研究</h4>
+                <span class="academic-toggle-icon" :class="{ 'is-open': expandedAcademic.nstc }">▾</span>
+              </button>
             </div>
+            <div class="academic-details" :class="{ 'is-collapsed': !expandedAcademic.nstc }">
             <div class="card-bottom">
               <p class="academic-content">
                 透過氣體辨識技術監測居家消防隱患。運用半導體式感測器與 Arduino Uno，結合藍芽與雲端技術，發展消防安全警示系統。
               </p>
             </div>
-                        <img
+            <img
               class="badge-preview-image"
               src="https://drive.google.com/thumbnail?id=1xiOeD9jR4MzVXgN7nYaUfZRowKAtW-_u&sz=w1200"
               alt="113年國科會大專學生研究計畫文件預覽"
             >
+            </div>
           </div>
         </div>
         </div>
@@ -245,18 +255,28 @@
               <p class="status-textn">審查中</p>
             </div>
             <div class="card-top">
-              <h4 class="academic-title">整合生成式人工智慧於DevOps專案導向軟體工程與管理之教學流程設計與其學習成效之研究</h4>
+              <button
+                type="button"
+                class="academic-toggle"
+                :aria-expanded="expandedAcademic.moe"
+                @click="toggleAcademic('moe')"
+              >
+                <h4 class="academic-title academic-title--compact">整合 <span class="academic-keyword academic-keyword--devops">生成式人工智慧</span> 於 <span class="academic-keyword academic-keyword--devops">DevOps</span> 專案導向軟體工程與管理之教學流程設計與其學習成效之研究</h4>
+                <span class="academic-toggle-icon" :class="{ 'is-open': expandedAcademic.moe }">▾</span>
+              </button>
             </div>
+            <div class="academic-details" :class="{ 'is-collapsed': !expandedAcademic.moe }">
             <div class="card-bottom">
               <p class="academic-content">
-                建構並實證一套以 GAI 輔助 DevOps 的專案學習模式，使學生能在 DevOps 全流程脈絡下，培養 GAI 協作素養、流程思維與系統性問題解決能力。
+                建構並實證一套以 <span class="academic-keyword">生成式人工智慧</span>（GAI）輔助 <span class="academic-keyword academic-keyword--devops">DevOps</span> 的專案學習模式，使學生能在 <span class="academic-keyword academic-keyword--devops">DevOps</span> 全流程脈絡下，培養 GAI 協作素養、流程思維與系統性問題解決能力。
               </p>
             </div>
-                          <img
+            <img
                 class="badge-preview-image"
                 src="https://drive.google.com/thumbnail?id=14vy3De0JQ76dfO6AfBJR2jJaHbsL3Zmv&sz=w1200"
                 alt="教育部教學流程圖預覽"
               >
+            </div>
           </div>
           </div>
       </div>
@@ -345,8 +365,16 @@ import {
 } from 'lucide-vue-next'
 
 const activeTab = ref('competition')
+const expandedAcademic = ref({
+  nstc: false,
+  moe: false,
+})
 const route = useRoute()
 const validTabs = ['competition', 'academic', 'club']
+
+function toggleAcademic(key) {
+  expandedAcademic.value[key] = !expandedAcademic.value[key]
+}
 
 function syncTabFromRoute() {
   const tab = route.query.tab
