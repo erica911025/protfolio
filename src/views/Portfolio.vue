@@ -51,14 +51,12 @@
       <h3 class="section-title">⚝ 競賽專題 Competition Projects</h3>
 
       <div id="competition-project" class="featured-project">
-        <div class="awards-header award-gradient">
-          <div class="awards-main">
-            <Award class="icon icon-award" />
+        <div class="awards-header award-gradient awards-main">
             <div>
               <h4 class="awards-title">第29屆 全國大專院校資訊服務創新競賽</h4>
               <p class="awards-subtitle"><span class="light">教育開放資料組</span> &amp; <span class="light">鈦坦敏捷開發特別獎</span> 雙項亞軍</p>
             </div>
-          </div>
+            <Award class="icon icon-award" />
           <!-- <div class="award-rank">第二名</div> -->
         </div>
 
@@ -121,11 +119,17 @@
             </div>
 
             <div class="content-block">
+             <button
+                type="button"
+                class="content-title0 snapshot-toggle"
+                :aria-expanded="expandedSnapshots"
+                @click="expandedSnapshots = !expandedSnapshots"
+              >
+               <span class="snapshot-toggle-label">✤ 頒獎快照</span>
+                <span class="snapshot-toggle-icon" :class="{ 'is-open': expandedSnapshots }">▾</span>
+            </button>
 
-             <h5 class="content-title0">
-                 ✤ 頒獎快照 
-            </h5>
-
+             <div class="snapshot-details" :class="{ 'is-collapsed': !expandedSnapshots }">
              <div class="project-gallery">
               <img
                 src="https://drive.google.com/thumbnail?id=1DBG5Ca5K89FcqTOqpU0dYNvSD5yRzqOO&sz=w400"
@@ -137,6 +141,7 @@
                 alt="得獎照片2"
                 class="gallery-photo"
               >
+            </div>
             </div>
         </div>
 
@@ -201,12 +206,12 @@
       <div class="research-capabilities">
         <p class="capabilities-title">✤ 核心研究能力展現：</p>
         <div class="tags-cloud">
-          <span class="skill-tag">✿ 系統性問題解決</span>
-          <span class="skill-tag">✿ AI 協作與流程賦能</span>
-          <span class="skill-tag">✿ 概念驗證與實作</span>
-          <span class="skill-tag">✿ 專業企劃與提案撰寫</span>
-          <span class="skill-tag">✿ 複雜資訊視覺化</span>
-          <span class="skill-tag">✿ 長篇邏輯架構化</span>
+          <span class="skill-tag">系統性問題解決</span>
+          <span class="skill-tag">AI 協作與流程賦能</span>
+          <span class="skill-tag">概念驗證與實作</span>
+          <span class="skill-tag">專業企劃與提案撰寫</span>
+          <span class="skill-tag">複雜資訊視覺化</span>
+          <span class="skill-tag">長篇邏輯架構化</span>
         </div>
       </div>
 
@@ -268,7 +273,7 @@
             <div class="academic-details" :class="{ 'is-collapsed': !expandedAcademic.moe }">
             <div class="card-bottom">
               <p class="academic-content">
-                建構並實證一套以 <span class="academic-keyword">生成式人工智慧</span>（GAI）輔助 <span class="academic-keyword academic-keyword--devops">DevOps</span> 的專案學習模式，使學生能在 <span class="academic-keyword academic-keyword--devops">DevOps</span> 全流程脈絡下，培養 GAI 協作素養、流程思維與系統性問題解決能力。
+                建構並實證一套以生成式人工智慧（GAI）輔助 DevOps 的專案學習模式，使學生能在 DevOps 全流程脈絡下，培養 GAI 協作素養、流程思維與系統性問題解決能力。
               </p>
             </div>
             <img
@@ -280,6 +285,8 @@
           </div>
           </div>
       </div>
+
+      
 
     </section>
 
@@ -365,6 +372,7 @@ import {
 } from 'lucide-vue-next'
 
 const activeTab = ref('competition')
+const expandedSnapshots = ref(false)
 const expandedAcademic = ref({
   nstc: false,
   moe: false,
