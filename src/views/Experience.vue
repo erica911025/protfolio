@@ -24,12 +24,14 @@
         <div>
           <div class="job-body">
             <p>
-              在巨鷗科技十八週的實習中，我參與系統雛型設計、功能測試與資料介接等工作，從實務中理解需求釐清、系統分析與跨部門溝通在專案推動中的重要性。透過協助會議紀錄、專案月報與文件整理，我也培養了進度控管與資訊整合能力，對資訊系統專案從規劃到落地的流程有了更完整的認識。
+              在巨鷗科技十八週的實習中，我參與<span class="job-highlight">系統雛型設計、功能測試與資料介接</span>等工作，從實務中理解<span class="job-highlight">需求釐清、系統分析與跨部門溝通</span>在專案推動中的重要性。透過協助<span class="job-highlight">會議紀錄、專案月報</span>與文件整理，我也培養了<span class="job-highlight">進度控管</span>與<span class="job-highlight">資訊整合能力</span>，對資訊系統專案從規劃到落地的流程有了更完整的認識。
             </p>
           </div>
         </div>
 
-        <div class="job-contributions">
+
+      </div>
+              <div class="job-contributions">
           <h5 class="contributions-title">✤ Key Contributions 
             <span class="project-tag">✿ 國立政治大學深耕計畫專案管考平台</span>
               <span class="project-tag">✿ 塑膠工業技術發展中心人才培訓網站</span></h5>
@@ -76,7 +78,6 @@
             </p>
           </div>
         </div>
-      </div>
     </section>
   </div>
 </template>
