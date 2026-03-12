@@ -299,59 +299,105 @@
             >
               <h3 class="section-title">⚝ 社團經驗 Club Experience</h3>
 
-              <div class="clubs-grid">
-                <div class="club-card">
-                  <div class="club-header">
-                    <h4>✤ 學生會副會長 ✤</h4>
+              <div
+                ref="clubsGridRef"
+                class="clubs-grid"
+                :style="clubCardHeight ? { '--club-card-height': `${clubCardHeight}px` } : {}"
+              >
+                <article
+                  class="club-flip-card"
+                  :class="{ 'is-flipped': flippedClubCards.vicePresident }"
+                  role="button"
+                  tabindex="0"
+                  aria-label="學生會副會長經驗卡片，點擊可翻面"
+                  @click="toggleClubCard('vicePresident')"
+                  @keydown.enter.prevent="toggleClubCard('vicePresident')"
+                  @keydown.space.prevent="toggleClubCard('vicePresident')"
+                >
+                  <div class="club-card-inner">
+                    <div class="club-card-face club-card-front">
+                      <div class="club-header">
+                        <h4>✤ 學生會副會長 ✤</h4>
+                      </div>
+                      <div class="club-footer takeaway-box">
+                        <h5 class="sub-title">核心收穫 Key Takeaways</h5>
+                        <p>主動釐清各方需求並凝聚共識，確保大型活動專案順利推行，在多方協調中精煉跨部門溝通能力。</p>
+                      </div>
+                      <p class="flip-tip">點擊卡片查看執行內容</p>
+                    </div>
+                    <div class="club-card-face club-card-back">
+                      <h5 class="sub-title">執行內容 Key Executions</h5>
+                      <ul class="task-list">
+                        <li>擔任校園特約商店總召，成功簽約30+合作店家，實質提升學生福利並擴大組織影響力。</li>
+                        <li>協助舉辦高中職飢餓十二活動，協助跨校資源整合與現場執行。</li>
+                        <li>參與籌備四校聯歡晚會，負責跨部門資源調度與進度控管，確保活動流程順暢達標。</li>
+                      </ul>
+                    </div>
                   </div>
-                  <div class="club-body">
-                    <h5 class="sub-title">執行內容 Key Executions</h5>
-                    <ul class="task-list">
-                      <li>擔任校園特約商店總召，成功簽約30+合作店家，實質提升學生福利並擴大組織影響力。</li>
-                      <li>協助舉辦高中職飢餓十二活動，協助跨校資源整合與現場執行。</li>
-                      <li>參與籌備四校聯歡晚會，負責跨部門資源調度與進度控管，確保活動流程順暢達標。</li>
-                    </ul>
-                  </div>
-                  <div class="club-footer takeaway-box">
-                    <h5 class="sub-title">核心收穫 Key Takeaways</h5>
-                    <p>擔任各部門間的溝通橋樑，在多方協調中精煉跨部門溝通能力。</p>
-                  </div>
-                </div>
+                </article>
 
-                <div class="club-card">
-                  <div class="club-header">
-                    <h4>✤ 學生會秘書部 / 選務部 ✤</h4>
+                <article
+                  class="club-flip-card"
+                  :class="{ 'is-flipped': flippedClubCards.secretary }"
+                  role="button"
+                  tabindex="0"
+                  aria-label="學生會秘書部與選務部經驗卡片，點擊可翻面"
+                  @click="toggleClubCard('secretary')"
+                  @keydown.enter.prevent="toggleClubCard('secretary')"
+                  @keydown.space.prevent="toggleClubCard('secretary')"
+                >
+                  <div class="club-card-inner">
+                    <div class="club-card-face club-card-front">
+                      <div class="club-header">
+                        <h4>✤ 學生會秘書部 / 選務部 ✤</h4>
+                      </div>
+                      <div class="club-footer takeaway-box">
+                        <h5 class="sub-title">核心收穫 Key Takeaways</h5>
+                        <p>在多線並行的任務中提升細節控管能力，建立標準化文件以有效溝通。</p>
+                      </div>
+                      <p class="flip-tip">點擊卡片查看執行內容</p>
+                    </div>
+                    <div class="club-card-face club-card-back">
+                      <h5 class="sub-title">執行內容 Key Executions</h5>
+                      <ul class="task-list">
+                        <li>負責撰寫會議紀錄、追蹤決議事項，並設計標準化活動表單，確保團隊資訊同步與行政流程順暢。</li>
+                        <li>參與「共振月台音樂祭」與「吾夜校園演唱會」籌備，協助前置行政庶務與現場機動調度。</li>
+                        <li>協助籌辦全校性學生會長選舉，嚴格執行選務規範與流程控管，確保程序之嚴謹與公正性。</li>
+                      </ul>
+                    </div>
                   </div>
-                  <div class="club-body">
-                    <h5 class="sub-title">執行內容 Key Executions</h5>
-                    <ul class="task-list">
-                      <li>負責撰寫會議紀錄、追蹤決議事項，並設計標準化活動表單，確保團隊資訊同步與行政流程順暢。</li>
-                      <li>參與「共振月台音樂祭」與「吾夜校園演唱會」籌備，協助前置行政庶務與現場機動調度。</li>
-                      <li>協助籌辦全校性學生會長選舉，嚴格執行選務規範與流程控管，確保程序之嚴謹與公正性。</li>
-                    </ul>
-                  </div>
-                  <div class="club-footer takeaway-box">
-                    <h5 class="sub-title">核心收穫 Key Takeaways</h5>
-                    <p>在多線並行的任務中提升細節控管能力，建立標準化文件以有效溝通。</p>
-                  </div>
-                </div>
+                </article>
 
-                <div class="club-card">
-                  <div class="club-header">
-                    <h4>✤ 科技志工服務社 ✤</h4>
+                <article
+                  class="club-flip-card"
+                  :class="{ 'is-flipped': flippedClubCards.volunteer }"
+                  role="button"
+                  tabindex="0"
+                  aria-label="科技志工服務社經驗卡片，點擊可翻面"
+                  @click="toggleClubCard('volunteer')"
+                  @keydown.enter.prevent="toggleClubCard('volunteer')"
+                  @keydown.space.prevent="toggleClubCard('volunteer')"
+                >
+                  <div class="club-card-inner">
+                    <div class="club-card-face club-card-front">
+                      <div class="club-header">
+                        <h4>✤ 科技志工服務社 ✤</h4>
+                      </div>
+                      <div class="club-footer takeaway-box">
+                        <h5 class="sub-title">核心收穫 Key Takeaways</h5>
+                        <p>深刻體會社會公益與同理心的力量，透過互動企劃帶給他人笑容與溫暖。</p>
+                      </div>
+                      <p class="flip-tip">點擊卡片查看執行內容</p>
+                    </div>
+                    <div class="club-card-face club-card-back">
+                      <h5 class="sub-title">執行內容 Key Executions</h5>
+                      <ul class="task-list">
+                        <li>每週針對社區據點長者的特性與需求，籌備專屬互動活動，從企劃發想到現場帶領，確保活動的參與度與適配性。</li>
+                        <li>走入社區提供長者實質溫暖的陪伴，建立信任關係，並在互動過程中，細心觀察高齡族群的生活習慣與真實反饋。</li>
+                      </ul>
+                    </div>
                   </div>
-                  <div class="club-body">
-                    <h5 class="sub-title">執行內容 Key Executions</h5>
-                    <ul class="task-list">
-                      <li>每週針對社區據點長者的特性與需求，籌備專屬互動活動，從企劃發想到現場帶領，確保活動的參與度與適配性。</li>
-                      <li>走入社區提供長者實質溫暖的陪伴，建立信任關係，並在互動過程中，細心觀察高齡族群的生活習慣與真實反饋。</li>
-                    </ul>
-                  </div>
-                  <div class="club-footer takeaway-box">
-                    <h5 class="sub-title">核心收穫 Key Takeaways</h5>
-                    <p>深刻體會社會公益與同理心的力量，透過互動企劃帶給他人笑容與溫暖。</p>
-                  </div>
-                </div>
+                </article>
               </div>
             </section>
 
@@ -361,7 +407,7 @@
 </template>
 
 <script setup>
-import { ref, watch } from 'vue'
+import { nextTick, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import {
   Award,
@@ -377,11 +423,56 @@ const expandedAcademic = ref({
   nstc: false,
   moe: false,
 })
+const flippedClubCards = ref({
+  vicePresident: false,
+  secretary: false,
+  volunteer: false,
+})
+const clubsGridRef = ref(null)
+const clubCardHeight = ref(0)
 const route = useRoute()
 const validTabs = ['competition', 'academic', 'club']
 
 function toggleAcademic(key) {
   expandedAcademic.value[key] = !expandedAcademic.value[key]
+}
+
+function toggleClubCard(key) {
+  flippedClubCards.value[key] = !flippedClubCards.value[key]
+}
+
+function updateClubCardHeight() {
+  if (!clubsGridRef.value) return
+
+  const cardInners = clubsGridRef.value.querySelectorAll('.club-card-inner')
+  if (!cardInners.length) return
+
+  let maxCardHeight = 0
+
+  cardInners.forEach((card) => {
+    const front = card.querySelector('.club-card-front')
+    const back = card.querySelector('.club-card-back')
+    const frontHeight = front ? front.scrollHeight : 0
+    const backHeight = back ? back.scrollHeight : 0
+    const cardHeight = Math.max(frontHeight, backHeight)
+    maxCardHeight = Math.max(maxCardHeight, cardHeight)
+  })
+
+  if (maxCardHeight > 0) {
+    clubCardHeight.value = maxCardHeight
+  }
+}
+
+function syncClubCardHeight() {
+  nextTick(() => {
+    requestAnimationFrame(updateClubCardHeight)
+  })
+}
+
+function handleResize() {
+  if (activeTab.value === 'club') {
+    syncClubCardHeight()
+  }
 }
 
 function syncTabFromRoute() {
@@ -399,6 +490,25 @@ watch(
     syncTabFromRoute()
   }
 )
+
+watch(activeTab, (tab) => {
+  if (tab === 'club') {
+    syncClubCardHeight()
+  }
+})
+
+onMounted(() => {
+  window.addEventListener('resize', handleResize)
+
+  if (activeTab.value === 'club') {
+    syncClubCardHeight()
+    setTimeout(updateClubCardHeight, 180)
+  }
+})
+
+onBeforeUnmount(() => {
+  window.removeEventListener('resize', handleResize)
+})
 </script>
 
 <style scoped src="../assets/portfolio.css"></style>

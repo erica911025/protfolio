@@ -17,19 +17,21 @@ body {
 
 /* 現代化導覽列樣式 */
 .navbar {
-  background: linear-gradient(120deg, rgba(255, 255, 255, 0.86) 0%, rgba(242, 249, 255, 0.86) 100%);
+  background: linear-gradient(120deg, rgba(186, 224, 241, 0.792) 0%, rgba(242, 249, 255, 0.86) 100%);
   backdrop-filter: blur(12px); /* 毛玻璃質感 */
   position: sticky;
   top: 0;
   z-index: 100;
   border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+  display: flex;
+  justify-content: end;
 }
 
 .nav-container {
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 0 3em;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   flex-wrap: wrap;
   gap: 0.8rem;
   padding: 1rem 2rem;
