@@ -320,7 +320,7 @@
                         <h4>✤ 學生會副會長 ✤</h4>
                       </div>
                       <div class="club-footer takeaway-box">
-                        <h5 class="sub-title">核心收穫 Key Takeaways</h5>
+                        <h5 class="sub-title1">核心收穫 Key Takeaways</h5>
                         <p>主動釐清各方需求並凝聚共識，確保大型活動專案順利推行，在多方協調中精煉跨部門溝通能力。</p>
                       </div>
                       <p class="flip-tip">點擊卡片查看執行內容</p>
@@ -328,9 +328,9 @@
                     <div class="club-card-face club-card-back">
                       <h5 class="sub-title">執行內容 Key Executions</h5>
                       <ul class="task-list">
-                        <li>擔任校園特約商店總召，成功簽約30+合作店家，實質提升學生福利並擴大組織影響力。</li>
-                        <li>協助舉辦高中職飢餓十二活動，協助跨校資源整合與現場執行。</li>
-                        <li>參與籌備四校聯歡晚會，負責跨部門資源調度與進度控管，確保活動流程順暢達標。</li>
+                        <li>擔任<span class="task-highlight">校園特約商店總召</span>，成功<span class="task-highlight2">簽約30+合作店家</span>，實質提升學生福利並擴大組織影響力。</li>
+                        <li>協助舉辦<span class="task-highlight">高中職飢餓十二活動</span>，協助<span class="task-highlight2">跨校資源整合</span>與現場執行。</li>
+                        <li>參與籌備<span class="task-highlight">四校聯歡晚會</span>，負責<span class="task-highlight2">跨部門資源調度與進度控管</span>，確保活動流程順暢達標。</li>
                       </ul>
                     </div>
                   </div>
@@ -352,7 +352,7 @@
                         <h4>✤ 學生會秘書部 / 選務部 ✤</h4>
                       </div>
                       <div class="club-footer takeaway-box">
-                        <h5 class="sub-title">核心收穫 Key Takeaways</h5>
+                        <h5 class="sub-title1">核心收穫 Key Takeaways</h5>
                         <p>在多線並行的任務中提升細節控管能力，建立標準化文件以有效溝通。</p>
                       </div>
                       <p class="flip-tip">點擊卡片查看執行內容</p>
@@ -360,9 +360,9 @@
                     <div class="club-card-face club-card-back">
                       <h5 class="sub-title">執行內容 Key Executions</h5>
                       <ul class="task-list">
-                        <li>負責撰寫會議紀錄、追蹤決議事項，並設計標準化活動表單，確保團隊資訊同步與行政流程順暢。</li>
-                        <li>參與「共振月台音樂祭」與「吾夜校園演唱會」籌備，協助前置行政庶務與現場機動調度。</li>
-                        <li>協助籌辦全校性學生會長選舉，嚴格執行選務規範與流程控管，確保程序之嚴謹與公正性。</li>
+                        <li>負責<span class="task-highlight">撰寫會議紀錄、追蹤決議事項</span>，並設計<span class="task-highlight2">標準化活動表單</span>，確保團隊資訊同步與行政流程順暢。</li>
+                        <li>參與「<span class="task-highlight">共振月台音樂祭</span>」與「<span class="task-highlight">吾夜校園演唱會</span>」籌備，協助前置行政庶務與現場機動調度。</li>
+                        <li>協助籌辦<span class="task-highlight">全校性學生會長選舉</span>，嚴格執行<span class="task-highlight2">選務規範與流程控管</span>，確保程序之嚴謹與公正性。</li>
                       </ul>
                     </div>
                   </div>
@@ -384,7 +384,7 @@
                         <h4>✤ 科技志工服務社 ✤</h4>
                       </div>
                       <div class="club-footer takeaway-box">
-                        <h5 class="sub-title">核心收穫 Key Takeaways</h5>
+                        <h5 class="sub-title1">核心收穫 Key Takeaways</h5>
                         <p>深刻體會社會公益與同理心的力量，透過互動企劃帶給他人笑容與溫暖。</p>
                       </div>
                       <p class="flip-tip">點擊卡片查看執行內容</p>
@@ -392,8 +392,8 @@
                     <div class="club-card-face club-card-back">
                       <h5 class="sub-title">執行內容 Key Executions</h5>
                       <ul class="task-list">
-                        <li>每週針對社區據點長者的特性與需求，籌備專屬互動活動，從企劃發想到現場帶領，確保活動的參與度與適配性。</li>
-                        <li>走入社區提供長者實質溫暖的陪伴，建立信任關係，並在互動過程中，細心觀察高齡族群的生活習慣與真實反饋。</li>
+                        <li>每週針對社區據點長者的特性與需求，籌備<span class="task-highlight">專屬互動活動</span>，從企劃發想到現場帶領，確保活動的參與度與適配性。</li>
+                        <li>走入社區提供長者實質溫暖的陪伴，建立信任關係，並在互動過程中，細心觀察<span class="task-highlight2">高齡族群的生活習慣與真實反饋</span>。</li>
                       </ul>
                     </div>
                   </div>

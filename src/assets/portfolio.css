@@ -739,6 +739,8 @@
   font-size: 16px;
   color: #4a5568;
   line-height: 1.6;
+  text-align: justify;
+  text-justify: inter-ideograph;
   padding: 20px 0;
   border-top: 1px solid #edf2f7;
   font-weight: 450;
@@ -966,8 +968,8 @@
   inset: 0;
   border-radius: 14px;
   background: #ffffff;
-  border: 1px solid #dce6f1;
-  box-shadow: 0 5px 18px rgba(36, 54, 79, 0.06);
+  /* border: 1px solid #dce6f1; */
+  box-shadow: 0 5px 18px rgba(36, 54, 79, 0.188);
   backface-visibility: hidden;
   display: flex;
   flex-direction: column;
@@ -987,16 +989,16 @@
 }
 
 .club-header {
-  background-color: #677b9c;
-  padding: 16px 20px;
+  background-color: #8db0b7;
+  padding:20px;
   text-align: center;
 }
 
 .club-header h4 {
   color: #ffffff;
   margin: 0;
-  font-size: 1.15rem;
-  font-weight: 600;
+  font-size: 1.25rem;
+  font-weight: 500;
 }
 
 .club-body {
@@ -1004,7 +1006,7 @@
   flex-grow: 1;
 }
 
-.sub-title {
+.sub-title1 {
   font-size: 1rem;
   color: #947c5c;
   margin: 0 0 25px 0;
@@ -1012,12 +1014,25 @@
   letter-spacing: 0.5px;
 }
 
+
+.sub-title {
+  font-size: 1rem;
+  color: #947c5c;
+  margin: 0 0 25px 0;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  border-left: 4px solid #c3d6dc;
+  padding:4px 10px;
+}
+
 .task-list {
   margin: 0;
   padding-left: 20px;
   color: #334155;
   font-size: 0.95rem;
-  line-height: 1.6;
+  line-height: 1.72;
+  text-align: justify;
+  text-justify: inter-ideograph;
 }
 
 .club-card-back .sub-title {
@@ -1028,13 +1043,29 @@
   margin-bottom: 8px;
 }
 
+.task-highlight {
+  background: linear-gradient(transparent 58%, rgba(255, 239, 129, 0.82) 58%);
+  color: #2f4a63;
+  font-weight: 500;
+  padding: 0 2px;
+  border-radius: 4px;
+}
+
+.task-highlight2 {
+  /* background: linear-gradient(transparent 58%, rgba(255, 239, 129, 0.82) 58%); */
+  color: #9e6442;
+  font-weight: 500;
+  padding: 0 2px;
+  border-radius: 4px;
+}
+
 .task-list strong {
   color: #ea580c;
   font-size: 1.05rem;
 }
 
 .takeaway-box {
-  padding: 30px;
+  padding:50px 30px;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -1061,7 +1092,7 @@
   position: absolute;
   right: 20px;
   bottom: 14px;
-  color: #927260;
+  color: #609263;
   font-size: 0.84rem;
   letter-spacing: 0.04em;
   text-align: right;
